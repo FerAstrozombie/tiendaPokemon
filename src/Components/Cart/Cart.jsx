@@ -59,7 +59,7 @@ const Cart = () => {
     }
     const updateStockProducts = () =>{
         cart.forEach((product) => {
-            const queryUpdate = doc(db, "Items", product.id)
+            const queryUpdate = doc(db, "Pokeballs", product.id)
             updateDoc(queryUpdate,{
                 category: product.category,
                 descripcion: product.descripcion,
@@ -72,7 +72,7 @@ const Cart = () => {
                 if(cart[cart.length - 1].id ===product.id) {
                     clear();
                     setTotalItemsState(0);
-                    navigate("/productos")
+                    navigate("/Productos")
                 }
             })
             .catch(() => {
@@ -171,7 +171,7 @@ const Cart = () => {
             {cart.length ===0 ? (
                 <>
                     <h3>No hay productos en tu carrito</h3>
-                    <Link className="linkVolver" to={"/productos"}>Volver a productos</Link>
+                    <Link className="linkVolver" to={"/Productos"}>Volver a productos</Link>
                 </>
                 ) : (
                 <div className="ordenTienda">
