@@ -1,0 +1,71 @@
+p {
+    color: black;
+    padding: 5px;
+}
+.nombre {
+    color: black;
+}
+
+.descripcion {
+    background-color: black;
+}
+
+.detalle {
+    color: black;
+}
+.ordenDetalle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagen {
+    width: 200px;
+}
+.imagenContenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.descripcion {
+    width: 800px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 50px;
+}
+.acomodadoBotones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+b {
+    color: black;
+}
+
+.spanDetalle, a {
+    color: black;
+}
+
+.volver {
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 480px){
+    .imagen {
+        width: 100px;
+    }
+    .descripcion{
+        flex-direction: column;
+        width: 100%;
+    }
+    .acomodadoBotones{
+        flex-direction: column;
+    }
+}

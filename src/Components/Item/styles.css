@@ -1,0 +1,57 @@
+.guitarras {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 30px;
+    padding-top: 30px;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+.imagenesGuitarra:hover {
+    scale: 1.1;
+    transition: 1.5s;
+
+}
+
+.botonAgregar {
+    border: 1px solid #FFC800;
+    /*anchura, estilo y color borde*/
+    padding: 5px;
+    /*espacio alrededor texto*/
+    background-color: #FFC800;
+    /*color botón*/
+    color: #ffffff;
+    /*color texto*/
+    text-decoration: none;
+    /*decoración texto*/
+    text-transform: uppercase;
+    /*capitalización texto*/
+    border-radius: 50px;
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+
+}
+h2,h3,h4 {
+    color: black;    
+}
+img {
+    border-radius: 30px;
+    width: 100px;
+}
+.precio {
+    padding-bottom: 30px;
+    color: black;
+}
+
+@media screen and (max-width: 480px) {
+    .guitarras{
+        width: 300px;
+    }
+    .imagenesGuitarra:hover {
+        scale: 1;
+        transition: 1.5s;
+    }
+    img {
+        width: 100px;
+    }
+}
