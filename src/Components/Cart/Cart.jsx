@@ -72,21 +72,8 @@ const Cart = () => {
                 if(cart[cart.length - 1].id ===product.id) {
                     clear();
                     setTotalItemsState(0);
-                    navigate("/Productos")
+                    navigate("/productos")
                 }
-            })
-            .catch(() => {
-                MySwal.fire({
-                    title: "Error al actualizar el stock",
-                    background: "#000000",
-                    color:"#FFFFFF",
-                    showClass: {
-                    popup: 'animate__animated animate__fadeInDown',
-                    },
-                    hideClass: {
-                        popup: 'animate__animated animate__fadeOutUp'
-                    }
-                })
             })
         });
     };
@@ -171,7 +158,7 @@ const Cart = () => {
             {cart.length ===0 ? (
                 <>
                     <h3>No hay productos en tu carrito</h3>
-                    <Link className="linkVolver" to={"/Productos"}>Volver a productos</Link>
+                    <Link className="linkVolver" to={"/productos"}>Volver a productos</Link>
                 </>
                 ) : (
                 <div className="ordenTienda">
