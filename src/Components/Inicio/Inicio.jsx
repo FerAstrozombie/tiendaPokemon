@@ -3,7 +3,7 @@ import "./styles.css"
 const Inicio = () => {
     return (
     <div>
-        <h1>Birenvenido a tu tienda de guitarras</h1>
+        <h1>Birenvenido a tu tienda Pokemon</h1>
         <h3>Te contamos un poco sobre nosotros</h3>
         <div className="textoReducido">              
                 <div className="flexizado" data-aos="fade-right">
